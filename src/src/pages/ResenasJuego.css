@@ -1,0 +1,228 @@
+:root {
+  --bg-card: #0c0c0c;
+  --bg-input: #1a1a1a;
+  --border: #333333;
+  --text-primary: #e5e5e5;
+  --text-secondary: #aaaaaa;
+  --primary: #dc2626;
+  --success: #14532d;
+  --warning: #b45309;
+  --radius: 8px;
+}
+
+.resenas-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.resenas-header {
+  margin-bottom: 1.25rem;
+}
+
+.resenas-title {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.resenas-title-game {
+  color: var(--primary);
+}
+
+.resenas-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  gap: 1.5rem;
+}
+
+.resenas-form-card {
+  background: var(--bg-card);
+  padding: 1.25rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+  position: sticky;
+  top: 20px;
+}
+
+.form-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.form-editing {
+  color: var(--warning);
+}
+
+.form-new {
+  color: white;
+}
+
+.btn-cancel-edit {
+  padding: 0.25rem;
+  font-size: 0.85rem;
+}
+
+.resena-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  color: var(--text-secondary);
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.stars-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.star-icon {
+  cursor: pointer;
+  transition: transform 0.1s;
+  color: var(--text-secondary);
+}
+
+.star-count {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 6px;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg-input);
+  color: var(--text-primary);
+}
+
+.form-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.form-checkbox {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--primary);
+}
+
+.resena-submit {
+  width: 100%;
+  justify-content: center;
+}
+
+.resenas-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.resena-card {
+  background: var(--bg-card);
+  padding: 1.25rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.resena-editing {
+  border-color: var(--warning);
+}
+
+.resena-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.resena-stars {
+  display: flex;
+  gap: 2px;
+  color: #facc15;
+}
+
+.resena-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.icon-btn.delete {
+  color: var(--warning);
+}
+
+.resena-text {
+  color: #e2e8f0;
+  white-space: pre-wrap;
+  margin-bottom: 1rem;
+}
+
+.resena-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  border-top: 1px solid var(--border);
+  padding-top: 0.5rem;
+}
+
+.recomendado {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--success);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 1rem;
+  color: var(--text-secondary);
+}
+
+
+.btn-toast {
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-toast-danger {
+  background: var(--primary);
+  color: #000;
+  font-weight: 700;
+}
+
+.btn-toast-cancel {
+  background: #222;
+  color: #fff;
+}
